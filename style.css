@@ -1,3 +1,12 @@
+@font-face{
+    font-family: 'Norse';
+    src:
+        url("fonts/Norse-Bold.woff2") format("woff2"),
+        url("fonts/Norse-Bold.woff") format("woff");
+        font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -45,23 +54,29 @@
   #root, #__next {
     isolation: isolate;
   }
-  .container, .logo, body{
+  h1 {
+    font-family: "Norse";
+    font-size: 80px;
+  }
+  .container, .logo, body, .form-controls, .left>p, .right>p{
     display: flex;
   }
   .container {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     justify-content: center;
+    margin-top: 20%;
   }
   .logo {
     background-image: url(background.jpg);
     width: 30%;
     height: 100vh;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-
+  .left {
+    flex-direction: column;
+    margin-right: 3%;
+  }
   section h1 {
     color: white;
   }
@@ -73,7 +88,37 @@
   }
   .input-section {
     background-color: white;
+    padding: 2%;
+    box-shadow:  2px 2px 3px grey;
   }
   .input-section>p{
     margin: 2%;
+  }
+  .form-controls{
+    justify-content: center;
+  }
+  .left>p, .right>p{
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 5px;
+  }
+  a{
+    color: #596D48;
+    text-decoration: none;
+  }
+  button {
+    background-color: #596D48;
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  input{
+    border: 1px #E5E7EB solid;
+  }
+  input:focus{
+    border: 2px blue dashed;
+  }
+  #password:invalid{
+    border: 1px red solid;
   }
