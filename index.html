@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="logo">
-        <img src="odin.png" alt="Image of Odin, the the mascot of the Odin Project">
-        <h1>ODIN</h1>
+        <div class="container">
+            <img src="odin.png" alt="Image of Odin, the the mascot of the Odin Project" width="50px">
+            <h1>ODIN</h1>
+        </div>
     </section>
-    <section>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started. <br><br>You <em>know</em> you want to.</p>
+    <section class="form-container">
+        <p class="marketing-paragraph">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started. <br><br>You <em>know</em> you want to.</p>
         <form action="">
             <div class="input-section">
                 <h2>Let's do this!</h2>
                 <p>
                     <label for="first_name">FIRST NAME</label>
                     <input type="text" id="first_name">
-        
+                
                     <label for="last_name">LAST NAME</label>
                     <input type="text" id="last_name">
                 </p>
