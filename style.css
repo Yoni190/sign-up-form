@@ -121,8 +121,11 @@
     width: 100%;
   }
   input:focus{
-    border: 2px blue dashed;
+    border: 2px lightblue solid;
+    box-shadow: 5px 5px 10px lightblue;
+    outline: none;
   }
-  #password:invalid{
+  #password:invalid, #confirm:invalid{
     border: 1px red solid;
   }
+  
