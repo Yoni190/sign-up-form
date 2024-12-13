@@ -58,7 +58,7 @@
     font-family: "Norse";
     font-size: 80px;
   }
-  .container, .logo, body, .form-controls, .left>p, .right>p{
+  .container, .logo, body, .form-controls, .row, .column, .input-section{
     display: flex;
   }
   .container {
@@ -88,19 +88,22 @@
   }
   .input-section {
     background-color: white;
-    padding: 2%;
+    padding: 5%;
     box-shadow:  2px 2px 3px grey;
+    flex-direction: column;
+    align-items: center;
   }
   .input-section>p{
     margin: 2%;
   }
-  .form-controls{
-    justify-content: center;
+  .row {
+    width: 50%;
+    gap: 35px;
   }
-  .left>p, .right>p{
-    justify-content: space-between;
-    margin-top: 20px;
-    gap: 5px;
+  .column {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
   a{
     color: #596D48;
@@ -115,6 +118,7 @@
   }
   input{
     border: 1px #E5E7EB solid;
+    width: 100%;
   }
   input:focus{
     border: 2px blue dashed;
