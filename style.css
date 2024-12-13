@@ -7,59 +7,16 @@
     font-style: normal;
     font-display: swap;
 }
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
-  
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
+
   h1 {
     font-family: "Norse";
     font-size: 80px;
   }
   .container, .logo, body, .form-controls, .row, .column, .input-section{
     display: flex;
+  }
+  section h1, button, .footer, .footer a {
+    color: white;
   }
   .container {
     background-color: rgba(0,0,0,0.5);
@@ -76,9 +33,6 @@
   .left {
     flex-direction: column;
     margin-right: 3%;
-  }
-  section h1 {
-    color: white;
   }
   .form-container {
     background-color: aliceblue;
@@ -111,7 +65,6 @@
   }
   button {
     background-color: #596D48;
-    color: white;
     width: 15%;
     border-radius: 5px;
     margin-top: 20px;
@@ -127,9 +80,6 @@
   }
   #password:invalid, #confirm:invalid{
     border: 1px red solid;
-  }
-  .footer, .footer a {
-    color: white;
   }
   .footer {
     position: absolute;
